@@ -6,7 +6,7 @@ import sys
 import time  # Import time for the `wait_for_file_active` function
 
 # Initialize the Google Gemini API with your API key
-genai.configure(api_key="AIzaSyBQaD16PkvnqsVrUcp2a66HTeAlz8JTGJU")  # Replace with your actual API key
+genai.configure(api_key="<API_KEY>")  # Replace with your actual API key
 
 def upload_to_gemini(path, mime_type=None):
     """Uploads the given file to Gemini and returns the file."""
