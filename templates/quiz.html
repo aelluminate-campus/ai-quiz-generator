@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Take Quiz</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+<body>
+    <h1>Test Your Knowledge!</h1>
+    <form action="/quiz" method="post">
+        {% for question in questions %}
+            <div>
+                <p>{{ question.question }}</p>
+                {% for option in question.options %}
+                    <label>
+                        <!-- Use the question's index to create a unique name attribute for each question's radio buttons -->
+                        <input type="radio" name="question_{{ question.index }}" value="{{ option[0] }}" required>
+                        {{ option }}
+                    </label><br>
+                {% endfor %}
+            </div>
+        {% endfor %}
+        <button type="submit">Submit Answers</button>
+    </form>
+</body>
+</html>

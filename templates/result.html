@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <p class="score">Your Score: {{ score }}/{{ total }}</p>
+        <ul>
+            {% for result in results %}
+                <li>
+                    <p>{{ result.question }}</p>
+                    <div class="options">
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            {% for option in result.options %}
+                                <li>{{ option }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <p><strong>Correct Answer:</strong> {{ result.correct_answer }}</p>
+                    <p><strong>Your Answer:</strong> {{ result.user_answer }}</p>
+                    
+                    {% if result.is_correct %}
+                        <p class="correct">Correct</p>
+                    {% else %}
+                        <p class="incorrect">Incorrect</p>
+                    {% endif %}
+
+                    <!-- Display explanation -->
+                    <p><strong>Explanation:</strong> {{ result.explanation }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        
+        <!-- Button to go back to the index page for a new test -->
+        <form action="{{ url_for('index') }}" method="get">
+            <button type="submit">Take Another Quiz</button>
+        </form>
+    </div>
+</body>
+</html>

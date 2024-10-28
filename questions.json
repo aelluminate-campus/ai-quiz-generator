@@ -1,0 +1,68 @@
+[
+    {
+        "question": "1. What is the primary focus of data science?",
+        "options": [
+            "a) Collecting data",
+            "b) Analyzing data",
+            "c) Storing data",
+            "d) Presenting data"
+        ],
+        "correct_answer": "b",
+        "explanation": "The text explicitly states that data science focuses on extracting meaningful insights and patterns from data, which is a core aspect of data analysis."
+    },
+    {
+        "question": "2. Which of the following is NOT a component of data science?",
+        "options": [
+            "a) Mathematics",
+            "b) Computer science",
+            "c) Linguistics",
+            "d) Statistics"
+        ],
+        "correct_answer": "c",
+        "explanation": "The passage mentions mathematics, computer science, and statistics as key components of data science. Linguistics is not directly related to the field's core principles."
+    },
+    {
+        "question": "3. What is the main purpose of data wrangling?",
+        "options": [
+            "a) To collect data from various sources",
+            "b) To analyze patterns in data",
+            "c) To prepare data for analysis",
+            "d) To visualize data"
+        ],
+        "correct_answer": "c",
+        "explanation": "Data wrangling focuses on cleaning and preparing data to make it suitable for analysis, ensuring its quality and consistency."
+    },
+    {
+        "question": "4. What is the role of machine learning algorithms in data science?",
+        "options": [
+            "a) To collect data automatically",
+            "b) To analyze data using statistical methods",
+            "c) To create predictive models",
+            "d) To visualize data trends"
+        ],
+        "correct_answer": "c",
+        "explanation": "Machine learning enables systems to learn from data and make predictions without explicit programming, making it a crucial part of building predictive models."
+    },
+    {
+        "question": "5. How does data science contribute to the improvement of business operations?",
+        "options": [
+            "a) By collecting more data",
+            "b) By analyzing customer preferences",
+            "c) By creating complex visualizations",
+            "d) By implementing statistical models"
+        ],
+        "correct_answer": "b",
+        "explanation": "The text highlights that data science helps businesses identify customer preferences, optimize supply chains, and forecast market trends, all of which contribute to improved operations."
+    },
+    {
+        "question": "6. What is the significance of statistical analysis in data science?",
+        "options": [
+            "a) It ensures that data is collected accurately.",
+            "b) It helps to interpret the meaning of data.",
+            "c) It validates the reliability of findings.",
+            "d) It creates visual representations of data."
+        ],
+        "correct_answer": "c",
+        "explanation": "Statistical analysis plays a vital role in data science by ensuring that observed patterns are not due to random chance and by assessing the reliability of research findings."
+    }
+]

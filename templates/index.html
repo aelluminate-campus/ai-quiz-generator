@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizGenie</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>QuizGenie: Smart Quiz Generator</h1>
+        
+        
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file">Choose file:</label>
+            <input type="file" name="file" id="file" required>
+            
+            <label for="num_items">Number of questions:</label>
+            <input type="number" name="num_items" id="num_items" required>
+
+            <label for="question_type">Select question type:</label>
+            <select name="question_type" id="question_type" required>
+                <option value="multiple_choice">Multiple Choice</option>
+                <option value="true_false">True/False</option>
+            </select>
+            
+            <button type="submit">Generate Quiz</button>
+        </form>
+    </div>
+</body>
+</html>
