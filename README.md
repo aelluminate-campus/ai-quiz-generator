@@ -1,1 +1,3 @@
-# ai-quiz-generator
+# AI Quiz Generator
+
+This project is a quiz generator that uses a dataset of questions and answers to generate a quiz. The dataset is a JSON file that contains a list of questions and answers. The quiz generator randomly selects a question from the dataset and presents it to the user. The user can then input their answer, and the quiz generator will check if the answer is correct. The user can continue answering questions until they decide to stop.
