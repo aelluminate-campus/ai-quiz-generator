@@ -1,31 +1,40 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    font-family: 'Roboto', Arial, sans-serif; /* Modern font for a clean look */
+    background-color: #eef2f6; /* Softer background for better contrast */
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
+/* Heading Styling */
 h1 {
-    color: #333;
-    font-size: 28px;
+    color: #222; /* Slightly darker for better emphasis */
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 /* Main Container */
 .container {
-    max-width: 600px;
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    max-width: 500px;
+    background-color: #ffffff; /* Keep it simple and clean */
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+    border-radius: 12px; /* Rounded corners for a modern feel */
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Form Styling */
@@ -33,43 +42,92 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px; /* Improved spacing for readability */
 }
 
 /* Label Styling */
 label {
     font-weight: bold;
+    font-size: 16px;
     margin-right: 10px;
+    color: #444; /* Slightly softer than black */
+    text-align: left;
+    width: 100%; /* Align labels with inputs */
 }
 
 /* Input and Select Styling */
 input[type="file"],
 input[type="number"],
 select {
-    padding: 8px;
+    padding: 12px;
     font-size: 16px;
-    width: 100%;
-    max-width: 250px;
+    width: 100%; /* Full width for better alignment */
+    max-width: 100%; /* Ensure no overflow */
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="file"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+    outline: none; /* Remove default outline */
 }
 
 /* Button Styling */
 button {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
     width: 100%;
     max-width: 200px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+button:active {
+    background-color: #003f88;
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Accessibility Styling */
+button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="file"],
+    input[type="number"],
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
 }
