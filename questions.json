@@ -65,4 +65,27 @@
         "correct_answer": "c",
         "explanation": "Statistical analysis plays a vital role in data science by ensuring that observed patterns are not due to random chance and by assessing the reliability of research findings."
     }
+    {
+    "question": "7. What is the importance of data visualization in data science?",
+    "options": [
+        "a) To clean and preprocess data",
+        "b) To present data insights clearly",
+        "c) To create machine learning models",
+        "d) To collect raw data"
+    ],
+    "correct_answer": "b",
+    "explanation": "Data visualization helps convey complex insights and patterns in a clear and accessible way, making it easier for stakeholders to understand and act on findings."
+    },
+    {
+        "question": "8. Which of the following best describes big data?",
+        "options": [
+            "a) Data stored in spreadsheets",
+            "b) Extremely large and complex datasets",
+            "c) Data generated from social media only",
+            "d) Small and manageable datasets"
+        ],
+        "correct_answer": "b",
+        "explanation": "Big data refers to datasets that are so large and complex that traditional data processing tools are inadequate for handling and analyzing them effectively."
+    }
+
 ]
